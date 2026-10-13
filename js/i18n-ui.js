@@ -29,6 +29,11 @@
     } catch (e) {}
   }
 
+  function compareLabel(open) {
+    if (lang === "en") return open ? "Hide comparison" : "Show comparison";
+    return open ? "隱藏對照" : "顯示對照";
+  }
+
   function paintBar() {
     document.querySelectorAll("[data-set-lang]").forEach(function (btn) {
       var on = btn.getAttribute("data-set-lang") === lang;
@@ -40,6 +45,17 @@
       btn.setAttribute("aria-pressed", on ? "true" : "false");
       btn.classList.toggle("is-on", on);
     });
+    document.querySelectorAll("[data-compare]").forEach(function (btn) {
+      var block = btn.closest(".lang-block");
+      var open = !!(block && block.classList.contains("is-compare-open"));
+      btn.textContent = compareLabel(open);
+    });
+  }
+
+  function notify() {
+    document.dispatchEvent(new CustomEvent("io-prep-langchange", {
+      detail: { lang: lang, mode: mode }
+    }));
   }
 
   function mountBar() {
@@ -58,9 +74,13 @@
     if (toggle) host.insertBefore(bar, toggle);
     else host.appendChild(bar);
     paintBar();
+    notify();
   }
 
-  document.addEventListener("DOMContentLoaded", mountBar);
+  document.addEventListener("DOMContentLoaded", function () {
+    mountBar();
+    paintBar();
+  });
 
   document.addEventListener("click", function (e) {
     var langBtn = e.target.closest("[data-set-lang]");
@@ -71,6 +91,7 @@
       persist();
       apply();
       paintBar();
+      notify();
       return;
     }
     var modeBtn = e.target.closest("[data-set-mode]");
@@ -79,6 +100,7 @@
       persist();
       apply();
       paintBar();
+      notify();
       return;
     }
     var compare = e.target.closest("[data-compare]");
@@ -87,7 +109,7 @@
       if (!block) return;
       var open = block.classList.toggle("is-compare-open");
       compare.setAttribute("aria-expanded", open ? "true" : "false");
-      compare.textContent = open ? "隱藏對照" : "顯示對照";
+      compare.textContent = compareLabel(open);
       return;
     }
     var card = e.target.closest(".flip-card");

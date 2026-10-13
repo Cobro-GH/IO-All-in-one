@@ -10,58 +10,58 @@
 <body>
   <div id="site-nav-root"></div>
   <main id="main" class="wrap">
-    <h1>模擬自我評分表</h1>
-    <p>非正式考官量表，供練習後勾選／計分。可<a href="#" onclick="IOPrep.printPage();return false;">列印本頁</a>。</p>
+    <h1><span data-l="zh">模擬自我評分表</span><span data-l="en">Practice scorecards</span></h1>
+    <p><span data-l="zh">非正式考官量表，供練習後勾選／計分。可<a href="#" onclick="IOPrep.printPage();return false;">列印本頁</a>。</span><span data-l="en">Not an official marking scheme. Tick and score after practice. You can <a href="#" onclick="IOPrep.printPage();return false;">print this page</a>.</span></p>
 
     <form id="score-gd" class="practice-box" onchange="IOPrep.sumScore('score-gd','out-gd')">
-      <h3 style="margin-top:0">小組討論（每項 0–5）</h3>
+      <h3 style="margin-top:0"><span data-l="zh">小組討論（每項 0–5）</span><span data-l="en">Group discussion (0–5 each)</span></h3>
       <div class="score-grid">
-        <span>分析／立場</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>聆聽／回應他人</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>溝通清晰</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>團隊／衝突處理</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>態度／專業</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">分析／立場</span><span data-l="en">Analysis / stance</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">聆聽／回應他人</span><span data-l="en">Listening / responding</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">溝通清晰</span><span data-l="en">Clear communication</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">團隊／衝突處理</span><span data-l="en">Team / conflict</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">態度／專業</span><span data-l="en">Manner / professionalism</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
       </div>
       <p id="out-gd" class="mono"></p>
     </form>
 
     <form id="score-sp" class="practice-box" onchange="IOPrep.sumScore('score-sp','out-sp')">
-      <h3 style="margin-top:0">即席演講（每項 0–5）</h3>
+      <h3 style="margin-top:0"><span data-l="zh">即席演講（每項 0–5）</span><span data-l="en">Impromptu talk (0–5 each)</span></h3>
       <div class="score-grid">
-        <span>即時開講／少冷場</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>結構（Intro-Body-Close）</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>故事扣價值詞</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>英語流暢可懂</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>連結 ImmD／收結</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">即時開講／少冷場</span><span data-l="en">Starts at once / little silence</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">結構（Intro-Body-Close）</span><span data-l="en">Structure (intro–body–close)</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">故事扣價值詞</span><span data-l="en">Story hits the value word</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">英語流暢可懂</span><span data-l="en">Understandable English</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">連結 ImmD／收結</span><span data-l="en">Link to ImmD / close</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
       </div>
       <p id="out-sp" class="mono"></p>
     </form>
 
     <form id="score-wr" class="practice-box" onchange="IOPrep.sumScore('score-wr','out-wr')">
-      <h3 style="margin-top:0">筆試卷二（每項 0–5）</h3>
+      <h3 style="margin-top:0"><span data-l="zh">筆試卷二（每項 0–5）</span><span data-l="en">Paper II (0–5 each)</span></h3>
       <div class="score-grid">
-        <span>明確立場</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>角度／持份者</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>例子／新聞</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>可行建議</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>字數／語文</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">明確立場</span><span data-l="en">A clear stance</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">角度／持份者</span><span data-l="en">Angles / stakeholders</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">例子／新聞</span><span data-l="en">Example / news</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">可行建議</span><span data-l="en">A workable suggestion</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">字數／語文</span><span data-l="en">Length / language</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
       </div>
       <p id="out-wr" class="mono"></p>
     </form>
 
     <form id="score-iv" class="practice-box" onchange="IOPrep.sumScore('score-iv','out-iv')">
-      <h3 style="margin-top:0">最後面試（每項 0–5）</h3>
+      <h3 style="margin-top:0"><span data-l="zh">最後面試（每項 0–5）</span><span data-l="en">Final interview (0–5 each)</span></h3>
       <div class="score-grid">
-        <span>部門認識</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>GSMEAC／結構</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>法理情／安全優先</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>動機／誠信</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
-        <span>抗壓／追問應變</span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">部門認識</span><span data-l="en">Knowledge of the department</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">GSMEAC／結構</span><span data-l="en">GSMEAC / structure</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">法理情／安全優先</span><span data-l="en">Law, reason, safety first</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">動機／誠信</span><span data-l="en">Motive / integrity</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
+        <span><span data-l="zh">抗壓／追問應變</span><span data-l="en">Pressure / follow-up</span></span><select data-score data-max="5"><option>0</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option></select>
       </div>
       <p id="out-iv" class="mono"></p>
     </form>
   </main>
-  <footer class="footer"><p>模擬用 · 非正式官方評分</p></footer>
+  <footer class="footer"><p><span data-l="zh">模擬用 · 非正式官方評分</span><span data-l="en">For practice. Not an official mark scheme.</span></p></footer>
   <script src="js/nav.js"></script>
   <script src="js/app.js"></script>
 </body>

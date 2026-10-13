@@ -221,8 +221,9 @@
         total += v;
         max += m;
       });
-      out.textContent = "自我評分合計：" + total + " / " + max +
-        (max ? "（" + Math.round((total / max) * 100) + "%）" : "");
+      var en = document.documentElement.dataset.lang === "en";
+      out.textContent = (en ? "Practice total: " : "自我評分合計：") + total + " / " + max +
+        (max ? (en ? " (" : "（") + Math.round((total / max) * 100) + (en ? "%)" : "%）") : "");
     },
     printPage: function () {
       window.print();
@@ -257,6 +258,13 @@
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("[data-autoload-check]").forEach(function (el) {
       IOPrep.loadChecklist(el.getAttribute("data-autoload-check"));
+    });
+  });
+
+  document.addEventListener("io-prep-langchange", function () {
+    document.querySelectorAll("form[id]").forEach(function (form) {
+      var out = form.querySelector("[id^='out-']");
+      if (out && out.textContent) IOPrep.sumScore(form.id, out.id);
     });
   });
 })();
