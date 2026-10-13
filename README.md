@@ -39,7 +39,7 @@ python3 -m http.server 8765
 
 輔助頁：`requirements.html`、`plan.html`、`scorecards.html`、`drive-materials.html`、`sources.html`。
 
-官方消息頁：`news.html`（導覽「部門消息」）。分為最新新聞、施政報告相關、規劃／五年計劃相關、入境處年報／刊物。頁面讀取 `data/news.json`。
+官方消息頁：`news.html`（知識庫分組內的「新聞／部門消息」）。分為最新新聞、施政報告相關、規劃／五年計劃相關、入境處年報／刊物。頁面讀取 `data/news.json`。
 
 **備考參考；內容可能滯後；以官網為準。**
 
@@ -61,3 +61,5 @@ python3 scripts/refresh_news.py
 GitHub Actions 工作流程 `.github/workflows/refresh-immd-news.yml` 每週一 09:00（香港時間）及可手動執行，在有改動時把新的 JSON 提交到 `main`。以 `GITHUB_TOKEN` 提交未必會自動觸發 Pages 重建；工作流程會再請求一次 Pages build（Pages 尚未啟用時該步會失敗並略過）。
 
 純靜態 HTML／CSS／JS，無後端。建站規格見 `docs/CONTENT_BRIEF.md`、`docs/SOURCE_INDEX.md`。
+
+頂欄可切「中文｜EN｜精要｜考場模式」（記在本機 `io-prep-lang`、`io-prep-mode`）。溫習預設中文正文；Stance、口號、GSMEAC、A/C/R/U 與詞彙名中英各一行。完整另一語用「顯示對照」或切到 EN。考場模式只留一種語言，演講計時不顯示故事提示。句式與詞彙卡可點擊翻面。導覽分組：總覽、筆試、初步面試、最後面試、知識庫、工具。

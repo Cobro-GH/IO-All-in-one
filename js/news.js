@@ -54,7 +54,14 @@
           });
           article.appendChild(bullets);
         }
-        if (item.why) article.appendChild(el("p", "why", "應考提示：" + item.why));
+        if (item.why) {
+          var why = el("p", "why");
+          why.appendChild(document.createTextNode("應考提示：" + item.why + " "));
+          var gloss = el("a", null, "詞彙");
+          gloss.href = "glossary.html";
+          why.appendChild(gloss);
+          article.appendChild(why);
+        }
         var links = el("p", "news-links");
         var hasLink = false;
         if (item.url) {

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>證件／簽證／身份邏輯｜A/C/R/U・逗留條件・人才計劃</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/i18n-ui.js"></script>
 </head>
 <body>
   <div id="site-nav-root"></div>
@@ -13,25 +14,53 @@
     <p><span class="badge ok">Drive</span> Note_V3 §20B ＋ HD_test_notes。高分易錯區。</p>
 
     <h2>總框架：三件事唔同</h2>
-    <table>
-      <thead><tr><th>概念</th><th>是甚麼</th><th>面試提醒</th></tr></thead>
-      <tbody>
-        <tr><td><strong>身份地位</strong></td><td>如永久居民／居留權</td><td>決定法律權利</td></tr>
-        <tr><td><strong>旅行證件</strong></td><td>護照／DI／回港證等</td><td>旅行與通關識別</td></tr>
-        <tr><td><strong>簽證／進入許可</strong></td><td>外來人士入境目的</td><td>透過<strong>逗留條件</strong>管理活動</td></tr>
-      </tbody>
-    </table>
+    <p>點卡片看「是甚麼」同面試提醒。</p>
+    <div class="flip-grid">
+      <button type="button" class="flip-card" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="flip-face flip-front"><strong>身份地位</strong></span>
+          <span class="flip-face flip-back">
+            <span class="flip-note">如永久居民／居留權</span>
+            <span class="flip-note">決定法律權利</span>
+          </span>
+        </span>
+      </button>
+      <button type="button" class="flip-card" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="flip-face flip-front"><strong>旅行證件</strong></span>
+          <span class="flip-face flip-back">
+            <span class="flip-note">護照／DI／回港證等</span>
+            <span class="flip-note">旅行與通關識別</span>
+          </span>
+        </span>
+      </button>
+      <button type="button" class="flip-card" aria-pressed="false">
+        <span class="flip-inner">
+          <span class="flip-face flip-front"><strong>簽證／進入許可</strong></span>
+          <span class="flip-face flip-back">
+            <span class="flip-note">外來人士入境目的</span>
+            <span class="flip-note">透過逗留條件管理活動</span>
+          </span>
+        </span>
+      </button>
+    </div>
 
     <h2>身份證符號 A／C／R／U（HD 筆記）</h2>
-    <table>
-      <thead><tr><th>符號</th><th>英文筆記義</th><th>中文記憶</th></tr></thead>
-      <tbody>
-        <tr><td><strong>A</strong></td><td>right of abode</td><td>有<strong>居留權</strong></td></tr>
-        <tr><td><strong>C</strong></td><td>stay limited by Director at registration</td><td>登記時逗留<strong>受限制</strong></td></tr>
-        <tr><td><strong>R</strong></td><td>right to land</td><td>有<strong>入境權</strong></td></tr>
-        <tr><td><strong>U</strong></td><td>stay not limited by Director at registration</td><td>登記時逗留<strong>不受限制</strong>（≠自動等於永久居民口語誤解要小心）</td></tr>
-      </tbody>
-    </table>
+    <p>溫習時字母下中英各一行。考場模式只留所選語言。</p>
+    <div class="flip-grid">
+      <div class="panel" style="margin:0">
+        <p class="stance" data-bi><span class="flip-letter">A</span><span data-l="zh">有居留權</span><span data-l="en">right of abode</span></p>
+      </div>
+      <div class="panel" style="margin:0">
+        <p class="stance" data-bi><span class="flip-letter">C</span><span data-l="zh">登記時逗留受限制</span><span data-l="en">stay limited by Director at registration</span></p>
+      </div>
+      <div class="panel" style="margin:0">
+        <p class="stance" data-bi><span class="flip-letter">R</span><span data-l="zh">有入境權</span><span data-l="en">right to land</span></p>
+      </div>
+      <div class="panel" style="margin:0">
+        <p class="stance" data-bi><span class="flip-letter">U</span><span data-l="zh">登記時逗留不受限制（≠自動等於永久居民，口語誤解要小心）</span><span data-l="en">stay not limited by Director at registration</span></p>
+      </div>
+    </div>
     <div class="panel warn"><p>三粒星<strong>≠</strong>永久居民。真正要會解釋 A／C／R／U 與居留權／入境權差異。</p></div>
     <p>出生地：<strong>Z</strong> 香港／<strong>X</strong> 內地／<strong>W</strong> 澳門／<strong>O</strong> 其他。變更：<strong>B</strong> 出生資料曾改／<strong>N</strong> 姓名曾改。</p>
 

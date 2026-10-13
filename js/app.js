@@ -18,7 +18,29 @@
       var href = a.getAttribute("href") || "";
       if (href === path || (path === "" && href === "index.html")) {
         a.classList.add("active");
+        var parent = a.closest(".nav-parent");
+        if (parent) {
+          var parentBtn = parent.querySelector("button");
+          if (parentBtn) parentBtn.classList.add("active");
+        }
       }
+    });
+    document.querySelectorAll(".nav-parent > button").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var li = btn.parentElement;
+        var mobile = window.matchMedia("(max-width: 800px)").matches;
+        if (mobile) {
+          document.querySelectorAll(".nav-parent.open").forEach(function (other) {
+            if (other !== li) {
+              other.classList.remove("open");
+              var otherBtn = other.querySelector("button");
+              if (otherBtn) otherBtn.setAttribute("aria-expanded", "false");
+            }
+          });
+        }
+        var open = li.classList.toggle("open");
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+      });
     });
   });
 

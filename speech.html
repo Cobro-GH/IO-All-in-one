@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>即席演講｜Drive 故事庫＋3 分鐘模板</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/i18n-ui.js"></script>
 </head>
 <body>
   <div id="site-nav-root"></div>
@@ -38,37 +39,67 @@
     <table>
       <thead><tr><th>故事</th><th>常用價值詞</th></tr></thead>
       <tbody>
-        <tr><td>A 小組 Project</td><td>Teamwork、Leadership、Conflict、Communication、Time Management、Stress、Responsibility</td></tr>
-        <tr><td>B 兼職侍應</td><td>Integrity、Patience、Adaptability、Rules、Service、EQ</td></tr>
-        <tr><td>C COVID／科技</td><td>Technology、Change、Health、Security、Cooperation、Resilience</td></tr>
+        <tr><td>A 小組 Project</td><td><span class="term" data-bi><span data-l="en">Teamwork, Leadership, Conflict, Communication, Time Management, Stress, Responsibility</span><span data-l="zh">團隊合作、領導、衝突、溝通、時間管理、壓力、責任</span></span></td></tr>
+        <tr><td>B 兼職侍應</td><td><span class="term" data-bi><span data-l="en">Integrity, Patience, Adaptability, Rules, Service, EQ</span><span data-l="zh">誠信、耐心、適應力、規則、服務、情商</span></span></td></tr>
+        <tr><td>C COVID／科技</td><td><span class="term" data-bi><span data-l="en">Technology, Change, Health, Security, Cooperation, Resilience</span><span data-l="zh">科技、改變、健康、保安、合作、韌性</span></span></td></tr>
       </tbody>
     </table>
 
     <h2 id="stories">故事大綱 A — The Group Project</h2>
-    <div class="example en">
-      <div class="ex-label">Drive 大綱</div>
-      <p><strong>開場：</strong>大學最後一年帶大型小組專題，deadline 極緊，核心成員突然生病，團隊士氣低落。<br />
-      <strong>轉折：</strong>Teamwork／Leadership — 重開會、按強項分工、鼓勵隊員；真正團隊在困難時互相支援。<br />
-      Stress — 拆細任務、一次一題；冷靜理性對 IO 重要。<br />
-      Communication — 先聽各方再決策；積極聆聽達共識。</p>
+    <div class="lang-block">
+      <button type="button" class="btn secondary compare-btn" data-compare aria-expanded="false">顯示對照</button>
+      <div class="example prose" data-l="zh">
+        <div class="ex-label">Drive 大綱</div>
+        <p><strong>開場：</strong>大學最後一年帶大型小組專題，deadline 極緊，核心成員突然生病，團隊士氣低落。<br />
+        <strong>轉折：</strong>Teamwork／Leadership — 重開會、按強項分工、鼓勵隊員；真正團隊在困難時互相支援。<br />
+        Stress — 拆細任務、一次一題；冷靜理性對 IO 重要。<br />
+        Communication — 先聽各方再決策；積極聆聽達共識。</p>
+      </div>
+      <div class="example en prose" data-l="en">
+        <div class="ex-label">English outline</div>
+        <p><strong>Opening:</strong> In my final year I led a large group project. The deadline was extremely tight, a core member suddenly fell ill, and morale dropped.<br />
+        <strong>Turn:</strong> Teamwork / Leadership — we met again, split work by strengths, and encouraged each other; a real team supports one another under pressure.<br />
+        Stress — break the work into smaller tasks, one issue at a time; calm reasoning matters for an IO.<br />
+        Communication — listen to every side before deciding; active listening builds consensus.</p>
+      </div>
     </div>
 
     <h2>故事大綱 B — The Part-time Job</h2>
-    <div class="example en">
-      <div class="ex-label">Drive 大綱</div>
-      <p><strong>開場：</strong>繁忙餐廳兼職，高峰時顧客因延遲當眾喝罵。<br />
-      EQ／Patience／Service — 深呼吸、專業、聆聽道歉並迅速處理。<br />
-      Rules／Integrity — 不合理折扣要求下仍守政策。<br />
-      Adaptability — 同時應付怒客與廚房人手不足。</p>
+    <div class="lang-block">
+      <button type="button" class="btn secondary compare-btn" data-compare aria-expanded="false">顯示對照</button>
+      <div class="example prose" data-l="zh">
+        <div class="ex-label">Drive 大綱</div>
+        <p><strong>開場：</strong>繁忙餐廳兼職，高峰時顧客因延遲當眾喝罵。<br />
+        EQ／Patience／Service — 深呼吸、專業、聆聽道歉並迅速處理。<br />
+        Rules／Integrity — 不合理折扣要求下仍守政策。<br />
+        Adaptability — 同時應付怒客與廚房人手不足。</p>
+      </div>
+      <div class="example en prose" data-l="en">
+        <div class="ex-label">English outline</div>
+        <p><strong>Opening:</strong> I worked part-time in a busy restaurant. At peak a customer shouted at me in public because of a delay.<br />
+        EQ / Patience / Service — breathe, stay professional, listen, apologise, and fix it quickly.<br />
+        Rules / Integrity — when asked for an unreasonable discount, still follow the policy.<br />
+        Adaptability — handle an angry customer and a short-staffed kitchen at the same time.</p>
+      </div>
     </div>
 
     <h2>故事大綱 C — COVID／Tech（社會）</h2>
-    <div class="example en">
-      <div class="ex-label">Drive 大綱</div>
-      <p>疫情衝擊邊境與生活。<br />
-      Technology — ImmD 推無接觸 e-Channel 等。<br />
-      Change／Adaptability — 口罩、在家工作；靈活求存。<br />
-      Law enforcement／Rules — 嚴格檢疫；依法執法是穩定基礎。</p>
+    <div class="lang-block">
+      <button type="button" class="btn secondary compare-btn" data-compare aria-expanded="false">顯示對照</button>
+      <div class="example prose" data-l="zh">
+        <div class="ex-label">Drive 大綱</div>
+        <p>疫情衝擊邊境與生活。<br />
+        Technology — ImmD 推無接觸 e-Channel 等。<br />
+        Change／Adaptability — 口罩、在家工作；靈活求存。<br />
+        Law enforcement／Rules — 嚴格檢疫；依法執法是穩定基礎。</p>
+      </div>
+      <div class="example en prose" data-l="en">
+        <div class="ex-label">English outline</div>
+        <p>The pandemic hit the border and daily life.<br />
+        Technology — ImmD introduced contactless e-Channel and similar measures.<br />
+        Change / Adaptability — masks and working from home; flexibility to get through.<br />
+        Law enforcement / Rules — strict quarantine; enforcing the law is the basis of stability.</p>
+      </div>
     </div>
 
     <h2 id="adapt">完整 3 分鐘結構示例（主題：Adaptability）</h2>
@@ -82,7 +113,7 @@
     <h2>Action Plan（Drive）</h2>
     <ol>
       <li>預先準備 3 個故事骨架，對應不同價值詞。</li>
-      <li>練習自信句：<em>This taught me that confidence comes from preparation…</em></li>
+      <li>練習自信句：<span class="stance" data-bi><span data-l="zh">這讓我明白，自信來自準備……</span><span data-l="en">This taught me that confidence comes from preparation…</span></span></li>
       <li>控時：講太快則在故事中段加細節（顧客表情、隊友情緒）作 padding。</li>
     </ol>
 
@@ -101,14 +132,15 @@
       <div id="speech-q" class="q-display">抽題後立刻開講（模擬零準備）</div>
       <div class="btn-row">
         <button type="button" class="btn" onclick="drawSpeech()">抽題</button>
+        <button type="button" class="btn" onclick="examSpeak()">考場開講</button>
         <button type="button" class="btn secondary" onclick="IOPrep.startTimer(180,'speech-timer')">3:00</button>
         <button type="button" class="btn secondary" onclick="IOPrep.startTimer(150,'speech-timer')">2:30</button>
         <button type="button" class="btn secondary" onclick="IOPrep.startTimer(40,'speech-timer')">Intro 0:40</button>
-        <button type="button" class="btn danger" onclick="IOPrep.stopTimer('speech-timer')">停止</button>
+        <button type="button" class="btn danger" onclick="stopSpeech()">停止</button>
       </div>
       <div class="timer-display" id="speech-timer">--:--</div>
-      <p style="font-size:.9rem;color:var(--text-muted)">提示：對應 A／B／C 故事庫選 2 個人＋1 社會例子。</p>
-      <div id="story-hint" class="panel tip" style="display:none"></div>
+      <p style="font-size:.9rem;color:var(--text-muted)">溫習模式抽題後顯示故事庫提示。考場模式，以及「考場開講」（約 12 秒準備後 3:00），計時中不顯示提示。</p>
+      <div id="story-hint" class="panel tip" hidden></div>
     </div>
     <div class="practice-box">
       <button type="button" class="btn secondary" onclick="IOPrep.drawMany('speech','speech-list',8)">產生一週 8 字清單</button>
@@ -128,13 +160,36 @@
     Service:'故事 B', EQ:'故事 B', Technology:'故事 C', Change:'故事 C', Health:'故事 C',
     Security:'故事 C', Cooperation:'故事 C', Resilience:'故事 C'
   };
+  function hintBlocked() {
+    var root = document.documentElement;
+    return root.dataset.mode === 'exam' || root.classList.contains('is-speech-exam');
+  }
   function drawSpeech(){
     IOPrep.drawQuestion('speech','speech-q');
     var w = document.getElementById('speech-q').textContent.trim();
     var h = document.getElementById('story-hint');
+    if (hintBlocked()) { h.hidden = true; return; }
     var tip = HINTS[w] || '自選最貼題的 A／B／C 故事，扣價值詞並連結 ImmD。';
-    h.style.display='block';
-    h.innerHTML='<strong>故事庫提示：</strong>'+tip;
+    h.hidden = false;
+    h.textContent = '';
+    var label = document.createElement('strong');
+    label.textContent = '故事庫提示：';
+    h.appendChild(label);
+    h.appendChild(document.createTextNode(tip));
+  }
+  function examSpeak() {
+    document.documentElement.classList.add('is-speech-exam');
+    var h = document.getElementById('story-hint');
+    if (h) h.hidden = true;
+    IOPrep.startTimer(12, 'speech-timer', function () {
+      IOPrep.startTimer(180, 'speech-timer', function () {
+        document.documentElement.classList.remove('is-speech-exam');
+      });
+    });
+  }
+  function stopSpeech() {
+    IOPrep.stopTimer('speech-timer');
+    document.documentElement.classList.remove('is-speech-exam');
   }
   </script>
 </body>

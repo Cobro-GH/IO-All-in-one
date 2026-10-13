@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>筆試攻略｜對齊官方格式＋Drive 秒殺技巧</title>
   <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/i18n-ui.js"></script>
 </head>
 <body>
   <div id="site-nav-root"></div>
@@ -182,48 +183,65 @@
   (function(){
     var box = document.getElementById('mcq-box');
     var fb = document.getElementById('mcq-feedback');
-    function showOpts(opts, answer) {
-      var html = '<div class="btn-row">';
+    function addText(tag, text) {
+      var node = document.createElement(tag);
+      node.textContent = text;
+      box.appendChild(node);
+      return node;
+    }
+    function showOpts(opts, answer, explain) {
+      var row = document.createElement('div');
+      row.className = 'btn-row';
       Object.keys(opts).forEach(function(k){
-        html += '<button type="button" class="btn secondary" data-k="'+k+'">'+k+'. '+opts[k]+'</button>';
-      });
-      html += '</div>';
-      box.insertAdjacentHTML('beforeend', html);
-      box.querySelectorAll('button[data-k]').forEach(function(b){
+        if (k === 'answer') return;
+        var b = document.createElement('button');
+        b.type = 'button';
+        b.className = 'btn secondary';
+        b.textContent = k + '. ' + opts[k];
         b.onclick = function(){
-          fb.textContent = (b.getAttribute('data-k')===answer)
-            ? '正確 ✓ 答案 '+answer
-            : '再試。正確為 '+answer;
+          var ok = k === answer;
+          var line = (ok ? '正確 ✓ 答案 ' : '未選中。正確為 ') + answer;
+          if (explain) line += ' — ' + explain;
+          fb.textContent = line;
         };
+        row.appendChild(b);
       });
+      box.appendChild(row);
     }
     document.getElementById('btn-cloze').onclick = function(){
       var c = IO_PRACTICE.cloze[0];
-      box.innerHTML = '<p>'+c.passage+'</p><p><strong>(1)</strong></p>';
-      showOpts({A:c.q1.A,B:c.q1.B,C:c.q1.C,D:c.q1.D}, c.q1.answer);
-      fb.textContent = c.source+'｜(2) 答案 '+c.q2.answer+' ('+c.q2[c.q2.answer]+')';
+      box.textContent = '';
+      fb.textContent = '';
+      addText('p', c.passage);
+      addText('p', '(1)');
+      showOpts({A:c.q1.A,B:c.q1.B,C:c.q1.C,D:c.q1.D}, c.q1.answer, c.source);
+      addText('p', '(2)');
+      showOpts({A:c.q2.A,B:c.q2.B,C:c.q2.C,D:c.q2.D}, c.q2.answer, c.source);
     };
     document.getElementById('btn-err').onclick = function(){
       var e = IO_PRACTICE.error[0];
-      box.innerHTML = '<p>'+e.sentence+'</p>';
-      showOpts(e.options, e.answer);
-      fb.textContent = e.source;
+      box.textContent = '';
+      fb.textContent = '';
+      addText('p', e.sentence);
+      showOpts(e.options, e.answer, e.source);
     };
     var zi = 0;
     document.getElementById('btn-zh').onclick = function(){
       var z = IO_PRACTICE.chinese[zi++ % IO_PRACTICE.chinese.length];
-      box.innerHTML = '<p><span class="tag">'+z.type+'</span> '+z.q+'</p>';
-      showOpts(z.options, z.answer);
-      fb.textContent = z.source;
+      box.textContent = '';
+      fb.textContent = '';
+      addText('p', z.type + ' ' + z.q);
+      showOpts(z.options, z.answer, z.source);
     };
     var ci = 0;
     document.getElementById('btn-comp').onclick = function(){
       var list = IO_PRACTICE.comprehension || [];
+      box.textContent = '';
+      fb.textContent = '';
       if (!list.length) { box.textContent = '暫無理解題資料'; return; }
       var q = list[ci++ % list.length];
-      box.innerHTML = '<p>'+q.stem+'</p>';
-      showOpts(q.options, q.answer);
-      fb.textContent = (q.explain||'')+'（Drive CRE_English_Practice 改編練習）';
+      addText('p', q.stem);
+      showOpts(q.options, q.answer, (q.explain || '') + '（Drive CRE_English_Practice 改編練習）');
     };
   })();
   </script>
