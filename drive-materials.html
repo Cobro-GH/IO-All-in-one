@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drive「IO」材料對照｜網站採用一覽</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav-root"></div>
+  <main id="main" class="wrap">
+    <h1>Google Drive「IO」材料 → 網站章節</h1>
+    <p>以下材料已<strong>深度編入</strong>各頁（非僅掛連結）。原始抽出：<code>/workspace/io-drive/extracted/</code>。</p>
+    <table>
+      <thead><tr><th>Drive 檔</th><th>編入位置</th><th>用法</th></tr></thead>
+      <tbody>
+        <tr><td>Exam_Format…</td><td><a href="written.html">筆試</a></td><td>90 題／90 分；卷二 500＋600／2h；題型表</td></tr>
+        <tr><td>IMMD_Paper1_MCQ_Hacks</td><td>筆試</td><td>秒殺法全文結構化</td></tr>
+        <tr><td>CRE_English_Practice</td><td>筆試練習區</td><td>理解題互動練習（改編）</td></tr>
+        <tr><td>IO_Final_Master_Angles</td><td><a href="angles.html">萬能角度</a>＋筆試卷二</td><td>八角＋新聞＋Mapping＋結尾</td></tr>
+        <tr><td>Impromptu_talk.md</td><td><a href="speech.html">即席演講</a></td><td>故事庫 A/B/C＋Adaptability 結構＋計時</td></tr>
+        <tr><td>Note_V3／Notes_v1</td><td><a href="interview.html">面試</a>＋<a href="knowledge.html">職能／法例</a></td><td>職能地圖、答題句、GSMEAC、證件邏輯</td></tr>
+        <tr><td>Ordinance／HD notes</td><td>職能／法例</td><td>Cap.115／331 概念層</td></tr>
+              <tr><td>Notes_v1／Ordinance／HD</td><td><a href="law.html">法例速查</a>＋identity</td><td>時限表、A/C/R/U、DPP、逗留條件</td></tr>
+        <tr><td>CONTENT_BRIEF</td><td><a href="docs/CONTENT_BRIEF.md">docs/</a></td><td>A1–A10 規格原文</td></tr>
+</tbody>
+    </table>
+    <section data-drive-slot="home"></section>
+    <div class="panel tip">
+      <p>若要再併入新檔：更新 <code>drive/manifest.json</code> 的 <code>items</code>，並把摘要 HTML 放入 <code>drive/</code>。見 <code>drive/README.md</code>。</p>
+    </div>
+  </main>
+  <footer class="footer"><p>Drive IO 對照表</p></footer>
+  <script src="js/nav.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/drive-content.js"></script>
+</body>
+</html>

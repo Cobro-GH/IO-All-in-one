@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>時事與政策｜五則新聞＋施政主線</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="site-nav-root"></div>
+  <main id="main" class="wrap">
+    <h1>時事與政策</h1>
+    <p><span class="badge ok">Drive</span> Master Angles 五則新聞 ＋ Note_V3 施政／大灣區主線。數字與個案請再核對 ImmD 新聞稿。</p>
+
+    <h2>五則易記新聞（考試必背卡）</h2>
+    <div class="card-grid">
+      <div class="card"><div class="num">01</div><h3>假結婚</h3><p>閃刺 2025 → 約 60 宗＋750 萬；聯同廣東瓦解集團</p></div>
+      <div class="card"><div class="num">02</div><h3>非法勞工</h3><p>僱主最高 10 年監；2025 保安局局長跨部門專責組</p></div>
+      <div class="card"><div class="num">03</div><h3>人才濫用</h3><p>首次破獲偽造學歷申請高才通跨境集團</p></div>
+      <div class="card"><div class="num">04</div><h3>逾期逗留</h3><p>持續大規模遣返非法入境／聲請被拒人士</p></div>
+      <div class="card"><div class="num">05</div><h3>人才便利</h3><p>2026 年 3 月起可提早 3 個月申請延長逗留</p></div>
+    </div>
+    <p>寫作／討論時接<a href="angles.html">角度 Mapping</a>。</p>
+
+    <h2>政策一句（Drive）</h2>
+    <div class="panel tip">
+      <p>入境處要在便利與管制之間取得平衡：支援融入國家發展大局與大灣區建設，同時堅守國家安全、身份核實、反非法勞工和反偷渡底線。</p>
+    </div>
+
+    <h2>內地／大灣區六條主線（與 ImmD 相關）</h2>
+    <ol>
+      <li>人流（口岸擠塞、大型活動）</li>
+      <li>人才（各項入場計劃）</li>
+      <li>口岸／新通關模式（e-道、智慧口岸）</li>
+      <li>創科（TechTAS、河套／新田等背景）</li>
+      <li>執法（假結婚、非法勞工、偽證）</li>
+      <li>國民身份及外遊安全（證件、1868）</li>
+    </ol>
+
+    <h2>抽卡口述（1 分鐘）</h2>
+    <div class="practice-box">
+      <div id="news-q" class="q-display">抽一則新聞卡</div>
+      <button type="button" class="btn" onclick="drawNews()">抽卡</button>
+      <button type="button" class="btn secondary" onclick="IOPrep.startTimer(60,'news-t')">60s</button>
+      <div class="timer-display" id="news-t">--:--</div>
+    </div>
+    <script>
+    var NEWS=["閃刺2025假結婚：60宗+750萬 — 角度S2+2+5","非法勞工：僱主10年監+專責組 — S1+4+8","假學歷高才通 — 3+1+8","大規模遣返逾期／聲請被拒 — S3+1+8","2026-03起提早3個月申請延長 — 3+便利"];
+    function drawNews(){ document.getElementById('news-q').textContent=NEWS[Math.floor(Math.random()*NEWS.length)]; }
+    </script>
+    <section data-drive-slot="general"></section>
+  </main>
+  <footer class="footer"><p>備考參考，非正式官方教材。</p></footer>
+  <script src="js/nav.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/drive-content.js"></script>
+</body>
+</html>
