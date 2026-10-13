@@ -236,6 +236,25 @@ tr:nth-child(even) td { background: rgba(255,255,255,.02); }
 .phrase-block .zh { font-weight: 600; }
 .phrase-block .en { color: var(--text-muted); font-size: .92rem; margin-top: .25em; }
 
+.news-list { display: flex; flex-direction: column; gap: .9rem; margin: 1rem 0 1.5rem; }
+.news-item {
+  background: var(--bg-card); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 1rem 1.1rem;
+}
+.news-item h3 { margin: .2em 0 .35em; }
+.news-meta { margin: 0 0 .45em; color: var(--text-muted); font-size: .85rem; }
+.news-item .why {
+  margin: .7em 0 0; padding: .55em .75em;
+  background: var(--accent-soft); border-radius: 8px; font-size: .9rem;
+}
+.news-links { margin: .7em 0 0; }
+.news-links a { margin-right: .8em; }
+.section-nav { display: flex; flex-wrap: wrap; gap: .45rem; margin: .8rem 0 1rem; }
+.section-nav a {
+  background: var(--bg-soft); border: 1px solid var(--border);
+  border-radius: 999px; padding: .25em .75em; font-size: .85rem;
+}
+
 .footer {
   border-top: 1px solid var(--border); margin-top: 2rem;
   padding: 1.5rem 1rem; text-align: center;

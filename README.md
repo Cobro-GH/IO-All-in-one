@@ -39,4 +39,25 @@ python3 -m http.server 8765
 
 輔助頁：`requirements.html`、`plan.html`、`scorecards.html`、`drive-materials.html`、`sources.html`。
 
+官方消息頁：`news.html`（導覽「部門消息」）。分為最新新聞、施政報告相關、規劃／五年計劃相關、入境處年報／刊物。頁面讀取 `data/news.json`。
+
+**備考參考；內容可能滯後；以官網為準。**
+
+## 更新新聞與官方摘錄
+
+`scripts/refresh_news.py` 會重新抓取：
+
+- 入境事務處新聞公報（與政府新聞處發布同步）
+- [2026年施政報告](https://www.policyaddress.gov.hk/2026/tc/) 中與入境、簽證、人才、口岸、非法勞工有關的段落
+- 香港五年規劃／國家「十五五」裡與入境處職責有關的摘錄（不是規劃全文）
+- 刊物頁上的最新年報連結；若已安裝 `pdftotext`（poppler），會從年報開頭抽出與出入境、人才、證件、執法有關的短撮要
+
+```bash
+python3 scripts/refresh_news.py
+```
+
+同年年報的撮要會沿用 `data/news.json` 已有內容，避免每次都下載整本年報 PDF。若要強制重讀本機 PDF，可設定 `IMMD_AR_PDF=/path/to/report.pdf`。
+
+GitHub Actions 工作流程 `.github/workflows/refresh-immd-news.yml` 每週一 09:00（香港時間）及可手動執行，在有改動時把新的 JSON 提交到 `main`。以 `GITHUB_TOKEN` 提交未必會自動觸發 Pages 重建；工作流程會再請求一次 Pages build（Pages 尚未啟用時該步會失敗並略過）。
+
 純靜態 HTML／CSS／JS，無後端。建站規格見 `docs/CONTENT_BRIEF.md`、`docs/SOURCE_INDEX.md`。

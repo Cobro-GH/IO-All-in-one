@@ -1,0 +1,46 @@
+name: Refresh ImmD news
+
+on:
+  schedule:
+    # Monday 09:00 Asia/Hong_Kong
+    - cron: "0 1 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+
+concurrency:
+  group: refresh-immd-news
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install poppler
+        run: sudo apt-get update && sudo apt-get install -y poppler-utils
+
+      - name: Refresh news JSON
+        run: python3 scripts/refresh_news.py
+
+      - name: Commit updated JSON
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/news.json
+          if git diff --cached --quiet; then
+            echo "No content change"
+          else
+            git commit -m "Refresh ImmD news and official excerpts"
+            git push
+          fi
+
+      - name: Request GitHub Pages rebuild
+        if: success()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh api --method POST "repos/${{ github.repository }}/pages/builds"

@@ -11,6 +11,7 @@
     ["law.html", "法例速查"],
     ["identity.html", "證件身份"],
     ["current-affairs.html", "時事政策"],
+    ["news.html", "部門消息"],
     ["glossary.html", "詞彙複習"],
     ["phrases.html", "句式"],
     ["scorecards.html", "評分表"],
