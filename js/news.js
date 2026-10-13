@@ -76,6 +76,45 @@
     }
   }
 
+  function addLine(parent, labelZh, labelEn, bodyZh, bodyEn) {
+    var p = el("p");
+    var strong = document.createElement("strong");
+    strong.appendChild(textPair(labelZh, labelEn));
+    p.appendChild(strong);
+    p.appendChild(textPair(bodyZh, bodyEn));
+    parent.appendChild(p);
+  }
+
+  function renderSpeech(article, cards) {
+    if (!cards || !cards.length) return;
+    cards.forEach(function (card) {
+      var block = el("div", "lang-block");
+      block.appendChild(compareButton());
+      ["zh", "en"].forEach(function (lang) {
+        var prose = el("div", "prose");
+        prose.setAttribute("data-l", lang);
+        var head = el("p", "why");
+        head.appendChild(textPair("演講用法", "Speech use"));
+        head.appendChild(document.createTextNode(" · "));
+        head.appendChild(textPair(card.layerZh, card.layerEn));
+        prose.appendChild(head);
+        addLine(prose, "意思。", "What it means. ", card.meaningZh, card.meaningEn);
+        addLine(prose, "入境處角度。", "ImmD angle. ", card.angleZh, card.angleEn);
+        addLine(prose, "口述。", "Say it. ", card.biteZh, card.biteEn);
+        if (card.href) {
+          var more = el("p");
+          var anchor = document.createElement("a");
+          anchor.href = card.href;
+          anchor.appendChild(textPair(card.linkZh || "完整 1-2-3 示例", card.linkEn || "Full 1-2-3 example"));
+          more.appendChild(anchor);
+          prose.appendChild(more);
+        }
+        block.appendChild(prose);
+      });
+      article.appendChild(block);
+    });
+  }
+
   function render(data) {
     var root = document.getElementById("news-root");
     root.textContent = "";
@@ -184,6 +223,7 @@
           hasLink = true;
         });
         if (hasLink) article.appendChild(links);
+        renderSpeech(article, (window.SPEECH_SOURCES || {})[item.title]);
         list.appendChild(article);
       });
       root.appendChild(list);
