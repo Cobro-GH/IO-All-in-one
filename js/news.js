@@ -58,13 +58,24 @@
     return btn;
   }
 
-  function fillProse(node, summary, bullets, why) {
+  function notesFor(title, lang) {
+    var pack = (window.EXCERPT_ANALYSIS || {})[title];
+    return pack ? pack[lang] : null;
+  }
+
+  function fillProse(node, summary, bullets, why, notes) {
+    notes = notes || {};
     if (summary) node.appendChild(el("p")).textContent = summary;
+    (notes.after || []).forEach(function (text) {
+      if (text) node.appendChild(el("p")).textContent = text;
+    });
     if (bullets && bullets.length) {
       var list = el("ul");
-      bullets.forEach(function (line) {
+      bullets.forEach(function (line, i) {
         var item = el("li");
-        item.textContent = line;
+        item.appendChild(el("p")).textContent = line;
+        var extra = notes.points && notes.points[i];
+        if (extra) item.appendChild(el("p")).textContent = extra;
         list.appendChild(item);
       });
       node.appendChild(list);
@@ -178,7 +189,7 @@
         block.appendChild(compareButton());
         var zh = el("div", "prose");
         zh.setAttribute("data-l", "zh");
-        fillProse(zh, item.summary, item.bullets, item.why ? "應考提示：" + item.why : "");
+        fillProse(zh, item.summary, item.bullets, item.why ? "應考提示：" + item.why : "", notesFor(item.title, "zh"));
         if (item.why) {
           var gloss = document.createElement("a");
           gloss.href = "glossary.html";
@@ -192,7 +203,7 @@
         en.setAttribute("data-l", "en");
         if (copy) {
           var whyEn = copy.why ? (chrome.examTip || "Exam tip") + ": " + copy.why : "";
-          fillProse(en, copy.summary, copy.bullets || null, whyEn);
+          fillProse(en, copy.summary, copy.bullets || null, whyEn, notesFor(item.title, "en"));
           if (copy.why) {
             var glossEn = document.createElement("a");
             glossEn.href = "glossary.html";

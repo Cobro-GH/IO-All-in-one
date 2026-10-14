@@ -209,3 +209,172 @@ var SPEECH_SOURCES = {
     }
   ]
 };
+
+/* Plain reading of thin excerpts. Official summary/bullets stay; these sentences say what they mean.
+   refresh_news.py rewrites news.json, so the reading lives here. */
+var EXCERPT_ANALYSIS = {
+  "入境事務處二○二五年工作回顧": {
+    zh: {
+      after: [
+        "這篇是處長在新聞發布會上的年度口述。本頁留下的撮要講的是部門怎樣定位自己：作為維護國家安全的一環，按適用法例和現行入境政策守護南大門，同時配合特區政府的施政。它沒有在這段撮要裡列出人次、換證或遣返數字。那些數字在下面的年報序言，不要把兩篇當成同一組統計。"
+      ]
+    },
+    en: {
+      after: [
+        "This is the Director’s year-in-review at a press conference. The digest kept here is how the department describes itself: part of safeguarding national security, applying the law and current immigration policy, guarding the southern gateway, and supporting the Government’s agenda. This extract does not list passenger, identity-card or removal figures. Those figures are in the annual-report foreword below. Do not treat the two texts as one set of statistics."
+      ]
+    }
+  },
+  "大灣區校園畢業生留港／回港就業": {
+    zh: {
+      after: [
+        "講的是一個仍在試行的安排：本港大學在大灣區校園的畢業生，可以繼續被納入「留港／回港就業安排」，試行再延長兩年，讓更多這類畢業生留在香港或回來工作。受影響的是這些校園的畢業生，不是所有在內地讀書的人，也不是已經取得居留權。考生要記住它仍然是試行，有畢業和院校條件；延長兩年不是永久納入，更不是自動批准。"
+      ]
+    },
+    en: {
+      after: [
+        "This is still a trial. Graduates of Hong Kong universities’ Greater Bay Area campuses can continue to be included in the Immigration Arrangements for Non-local Graduates, and the trial is extended for two years so more of them can stay or return to work. It affects those graduates, not everyone who studied on the Mainland, and it is not the right of abode. The two-year extension is not a permanent rule and not an automatic approval. Eligibility still has to be met."
+      ]
+    }
+  },
+  "高才通續簽要求放寬": {
+    zh: {
+      after: [
+        "講的是高才通續簽時少交一類文件，不是降低整個計劃的審查。對象只限獲指定公營機構支持的初創科企經營者：企業初期收入不穩，所以續簽可以獲豁免公司收入證明等要求。其他高才通申請人沒有這項豁免。它也不是 2026 年 3 月起「延長逗留可提早三個月申請」——那一項改的是遞表時間，這一項改的是個別類別要交的收入文件。身份、學歷和其他續簽條件仍然要核對。"
+      ]
+    },
+    en: {
+      after: [
+        "This relaxes one class of document at Top Talent Pass renewal. It does not lower the check for the whole scheme. Only operators of start-ups supported by designated public organisations are covered: income is often low while the business is unstable, so they may be exempted from proof of company income and similar items. Other Top Talent Pass applicants do not get that exemption. It is also not the March 2026 change that lets people apply three months early to extend a stay. That change is about when the form is filed. This one is about an income document for one class of applicant. Identity, qualifications and the other renewal conditions are still checked."
+      ]
+    }
+  },
+  "擴大「特邀人士入境便利計劃」": {
+    zh: {
+      after: [
+        "講的是誰可以被邀請、從哪些地方來。計劃原先涵蓋東盟成員國，現在擴到中亞和中東；而且不限某幾個部門，所有政策局和部門都可以發邀請，目的是經貿和交流。受影響的是這些地方、持有邀請的訪客，不是一般旅客的免簽名單。邀請說明來港目的，管制站仍要核對這個人是不是被邀請的那一個，以及逗留條件是否相符。"
+      ]
+    },
+    en: {
+      after: [
+        "This says who may be invited, and from where. The scheme used to cover ASEAN member states. It now extends to Central Asia and the Middle East, and every bureau and department may issue an invitation, for business and exchanges. It affects invited visitors from those places, not the general visa-free list for ordinary travellers. The invitation explains the purpose of the visit. At the control point the officer still checks that this is the person invited, and that the conditions of stay match."
+      ]
+    }
+  },
+  "新增短期培訓簽證類別": {
+    zh: {
+      after: [
+        "講的是多了一種來港目的，不是多了一種工作簽證。非本地人士可以來港上政府政策局和部門認可的短期培訓課程，對應的政策是把香港做成區域培訓中心。受影響的是獲批這類簽證的學員，以及認可那些課程的政策局和部門。逗留理由是課程本身。如果人在港轉去做課程以外的受僱，問題就回到逗留條件，不能用「已經有簽證」帶過。"
+      ]
+    },
+    en: {
+      after: [
+        "This adds a purpose of stay, not a work visa. Non-local people may come for short training courses recognised by government bureaux and departments, as part of making Hong Kong a regional training centre. It affects people granted that visa, and the bureaux that recognise the courses. The reason for the stay is the course. If the person takes employment outside the course, the question is a breach of the conditions of stay. “I already have a visa” does not answer it."
+      ]
+    }
+  },
+  "港珠澳大橋「智通行」先導計劃": {
+    zh: {
+      after: [
+        "講的是大橋香港口岸一種不用下車的通關試驗，時間是今年 12 月。系統用人工智能配合人面辨識，認出已經登記、合資格的跨境私家車司機和乘客。受影響的是這批已登記的人，不是每一輛過橋的車，也不是步行過關的旅客。「無感」是少一次停車和出示證件，身份仍然要被識別。未登記、系統對不上，或證件有疑問的人，不能當成已經放行。"
+      ]
+    },
+    en: {
+      after: [
+        "This is a pilot at the Hong Kong Port of the Hong Kong-Zhuhai-Macao Bridge, starting in December, for clearance without leaving the car. AI and facial recognition identify drivers and passengers of cross-boundary private cars who have already registered and are eligible. It affects that registered group, not every vehicle on the bridge and not passengers clearing on foot. “Contactless” means one less stop and one less document produced. Identity is still identified. Someone who is not registered, whom the system does not match, or whose document is doubtful, has not been cleared."
+      ]
+    }
+  },
+  "皇崗口岸「一地兩檢」": {
+    zh: {
+      after: [
+        "講的是重建後的皇崗口岸怎樣查人，預計今年第四季啟用。旅客在同一地點完成兩邊的檢查，模式叫「合作查驗、一次放行」，所以少走一次、少排一次隊。受影響的是使用皇崗的旅客，以及兩邊的查驗人員。一次放行是查完才放，不是取消其中一方的檢查，也不是把法律併成一套。"
+      ]
+    },
+    en: {
+      after: [
+        "This is how the rebuilt Huanggang Port will examine people. It is expected to open in the fourth quarter. Passengers complete both sides’ checks in one place, under “joint inspection, one release”, so they move and queue once. It affects passengers using Huanggang and the officers on both sides. One release means release after the inspection. It does not cancel either side’s check, and it does not merge the two legal systems."
+      ]
+    }
+  },
+  "全方位打擊非法勞工": {
+    zh: {
+      after: [
+        "講的是怎樣減少聘用沒有許可的人，以及減少有人為了工作而來港、其後走上免遣返聲請的經濟誘因。五項都是手段：強化跨部門專責組並檢視成員、在個別行業找「反黑工大使」收集情報和做宣傳、用科技做網上巡邏、檢視刑罰以求更有阻嚇力、以及針對性的跨部門聯合行動。受影響的是僱主、不符合逗留條件而工作的人，和參與執法的部門。這一段沒有寫出罰款或監禁年期；角度筆記裡的僱主最高罰款 50 萬元及監禁 10 年是另一個出處，不要說成施政報告這段的數字。"
+      ]
+    },
+    en: {
+      after: [
+        "This is about making it less worthwhile to employ someone who has no permission to work, and about reducing the economic pull for people who might later make a non-refoulement claim. The five items are the means: strengthen the inter-departmental task force and review who sits on it, appoint trade ambassadors in selected sectors to gather intelligence and publicise the rules, use technology for online patrols, review penalties so the courts can pass more deterrent sentences, and run targeted joint operations. It affects employers, people working in breach of their conditions of stay, and the departments that enforce the rules. This paragraph does not state a fine or a term of imprisonment. The angles note of an employer’s maximum fine of $500,000 and 10 years is a different source. Do not attribute it to this Policy Address passage."
+      ]
+    }
+  },
+  "香港第一個五年規劃，對接國家「十五五」": {
+    zh: {
+      after: [
+        "講的是兩份文件的關係，不是入境處的工作清單。今年是國家「十五五」開局之年；香港寫了自己第一份五年規劃，用來對接國家規劃。五年規劃定未來五年的方向，施政報告則是這一年怎樣落實、行政長官當年的重點。中間關於經濟和民生的句子是全港的方向，不要背成主任的職責。接到入境處時只留三件相關的事：人才怎樣進來、口岸人流怎樣處理、大灣區的規則和機制怎樣對得上。"
+      ]
+    },
+    en: {
+      after: [
+        "This explains how two documents relate. It is not ImmD’s work list. This year is the first year of the national 15th Five-Year Plan. Hong Kong has written its own first five-year plan so that it lines up with the national plan. The five-year plan sets the direction for five years. The Policy Address is how that direction is carried out this year, and what the Chief Executive is prioritising now. The sentences about the economy and livelihoods are for Hong Kong as a whole. Do not memorise them as an officer’s duties. What belongs to ImmD is three things only: how talent is admitted, how port passenger flow is handled, and how Greater Bay Area rules and mechanisms match."
+      ]
+    }
+  },
+  "「十五五」開局與大灣區人員往來": {
+    zh: {
+      after: [
+        "講的是大灣區協同發展裡，人怎樣往來。原文把合作分成基建的「硬聯通」、規則和機制的「軟聯通」、居民之間的「心聯通」，後面還有產業、創新和「一帶一路」。和入境處直接有關的是軟聯通：人要合法往來，證件、簽證和逗留條件就要對得上。硬聯通是口岸和橋，心聯通不是免檢查。產業和國際組織那些句子不要在這一則裡展開。"
+      ]
+    },
+    en: {
+      after: [
+        "This is about how people move inside Greater Bay Area cooperation. The text splits the work into “hard connectivity” of infrastructure, “soft connectivity” of rules and mechanisms, and “heart connectivity” among residents, then goes on to industry, innovation and the Belt and Road. What belongs directly to ImmD is soft connectivity: lawful movement depends on documents, visas and conditions of stay matching. Hard connectivity is ports and bridges. Heart connectivity is not the cancellation of inspection. Do not develop the industry and international-organisation sentences in this item."
+      ]
+    }
+  },
+  "入境事務處2025年年報": {
+    zh: {
+      after: [
+        "下面八點都來自年報序言的撮要，不是年報全文。每一點先是原文裡的事實，接著說明它在講什麼、影響誰。"
+      ],
+      points: [
+        "講的是 2025 年全港進出境的總量，不是某一個口岸。約 3.35 億人次，比 2024 年多約 12%，也超過 2019 年約 3 億的紀錄，所以口岸比疫前更忙。考生要接的不是背誦人次，而是人多了仍然要分流：合資格的人走得快，有疑問的人停下來。",
+        "講的是誰可以走 e-道，不是取消兒童的身份核對。年齡由 11 歲降到 7 歲，適用於持智能身份證的香港永久性居民，以及持指定電子旅行證件的過境和訪港旅客。更年幼的旅客會進入自助通道；證件不符、系統對不上，或需要同行大人處理的情況，仍然要有人在櫃檯接手。",
+        "講的是機場入境少一次拿出證件。合資格香港居民用容貌識別核實身份，不用出示實體證件，也不用掃描非觸式 e-道二維碼。受影響的是這批合資格居民。未符合資格或系統認不出的人，不能當成已經通關。",
+        "講的是人才政策和電子簽證要配合國家規劃，不是公布一個新配額。序言說《「十五五」規劃建議》支持香港作為國際高端人才集聚的方向，入境處配合各項人才入境政策，並做電子化簽證申請。這句沒有批准人數。考生不要把別頁的「逾 23 萬人」安到這一句上。",
+        "講的是舊智能身份證已經不能再用。換證計劃完結後，舊證在 2025 年分兩階段失效；約 746 萬人已換領，換證率約 93%。受影響的是尚未換領、仍拿舊證的人。管制站和人事登記認的是仍有效的證，不能假設舊證過關或辦證仍然可以。",
+        "講的是香港特區護照在外地的待遇，不是外地人免簽來港的名單。截至 2025 年年底，174 個國家或地區給護照持有人免簽證或落地簽證。考生可以用它說明旅行證件的認受性，不能說成所有訪客都免簽進入香港。",
+        "講的是免遣返聲請不獲確立之後的遣離，不是聲請成功率。2025 年超過 2,600 人，比前一年多約 18%。受影響的是聲請已經完結、不獲確立的人。不能用這個數字說每一個聲請人都在濫用，也不要把它和遞解混成同一種權力。",
+        "講的是機場出入境服務的外界評價。入境處第五次獲得 Skytrax「全球最佳機場出入境服務大獎」。它可以用來說明便利和秩序可以同時存在，但不是執法成績，也不能代替上面的人次或遣返數字。"
+      ]
+    },
+    en: {
+      after: [
+        "The eight points below are from the foreword digest, not the full report. Each point is the fact in the foreword, then what it is saying and who it affects."
+      ],
+      points: [
+        "This is the total of arrivals and departures for Hong Kong in 2025, not one control point. About 335 million movements, about 12% more than in 2024, and above the 2019 record of about 300 million, means the ports are busier than before the pandemic. The point to learn is not the headcount. It is that a larger flow still has to be streamed: eligible people move faster, and a doubtful case stops.",
+        "This is who may use e-Channel, not the cancellation of identity checks for children. The age goes from 11 to 7, for Hong Kong permanent residents holding a smart identity card and for specified visitors and transit passengers holding an electronic travel document. Younger passengers enter the self-service channel. A document that does not match, a system that does not recognise the person, or a case that needs the accompanying adult, still comes back to an officer.",
+        "This is one less time a document is produced at the airport. Eligible Hong Kong residents verify identity by facial recognition, without a physical document and without scanning a contactless e-Channel QR code. It affects that eligible group. Someone who is not eligible, or whom the system does not recognise, has not been cleared.",
+        "This says talent policy and electronic visas have to support the national plan. It does not announce a new quota. The foreword says the 15th Five-Year Plan proposals support Hong Kong as a hub for high-end international talent, and that ImmD supports the talent-admission policies and electronic visa applications. There is no approval figure in the sentence. Do not attach the “more than 230,000” from another page to this line.",
+        "This says the old smart identity card can no longer be used. After the replacement exercise, old cards ceased to be valid in two phases in 2025. About 7.46 million people had replaced theirs, a rate of about 93%. It affects people who still hold an old card. Control points and registration of persons recognise a card that is still valid. An old card is not a reason to assume clearance or a counter service will proceed.",
+        "This is the treatment of the HKSAR passport abroad, not the list of foreigners who may enter Hong Kong visa-free. By the end of 2025, 174 countries and territories offered visa-free access or visa on arrival to passport holders. A candidate can use it to show that the travel document is widely accepted. It does not mean every visitor enters Hong Kong visa-free.",
+        "This is removal after a non-refoulement claim was not substantiated, not a success rate for claims. More than 2,600 people in 2025, about 18% more than the year before. It affects people whose claims have ended and were not substantiated. The figure does not show that every claimant is abusing the system, and it is not the same power as deportation.",
+        "This is an outside view of airport immigration service. ImmD received the Skytrax award for the world’s best airport immigration service for the fifth time. It can show that facilitation and order can exist together. It is not an enforcement result, and it does not replace the passenger or removal figures above."
+      ]
+    }
+  },
+  "刊物目錄（年報、新聞公報）": {
+    zh: {
+      after: [
+        "這不是另一組統計，而是入境處放年報和新聞公報的目錄。考生要用它知道全文在哪裡，而不是在目錄頁背數字。新一年年報上載之後，本站的更新腳本才會改指到最新年份；目錄本身不會告訴你今年的人次。"
+      ]
+    },
+    en: {
+      after: [
+        "This is not another set of statistics. It is ImmD’s index of annual reports and press releases. A candidate uses it to know where the full text is, not to memorise a figure from the index page. After a new annual report is uploaded, this site’s update script points at the latest year. The index itself does not state this year’s passenger total."
+      ]
+    }
+  }
+};
