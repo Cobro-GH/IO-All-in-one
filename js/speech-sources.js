@@ -96,15 +96,15 @@ var SPEECH_SOURCES = {
     {
       layerZh: "印象 2｜一次放行不是沒有檢查",
       layerEn: "Impression 2, one release is not no inspection",
-      meaningZh: "重建後的皇崗口岸預計今年第四季啟用，一地兩檢，以及「合作查驗、一次放行」。",
-      meaningEn: "The rebuilt Huanggang Port is expected to open in the fourth quarter, with co-location and “joint inspection, one release”.",
-      angleZh: "旅客少排一次隊，兩邊的查驗仍然發生。合作是流程，不是把任何一方的法律取消。",
-      angleEn: "The passenger queues once. Inspection on both sides still happens. Cooperation is a process. It does not cancel either side’s law.",
-      biteZh: "皇崗的一地兩檢讓旅客少走一次。一次放行的意思是查完才放，不是不查。如果講合作，我就停在這一句，不再加年報的人次。",
-      biteEn: "Co-location at Huanggang means the passenger moves once. One release means release after the inspection, not instead of it. If I am talking about cooperation, I stop at that sentence and do not add the annual report’s passenger total.",
-      href: "speech.html#story-c",
-      linkZh: "公共例子怎樣選一個場景",
-      linkEn: "How a public example picks one scene"
+      meaningZh: "施政報告這句仍是計劃：重建後的皇崗預計今年第四季啟用，一地兩檢，以及「合作查驗、一次放行」。落實見 2026 年 10 月 12 日上午 6 時 30 分的開通，不要把計劃句改寫成公報，也不要把兩句當成無關的兩則新聞。",
+      meaningEn: "This Policy Address sentence is still the plan: the rebuilt Huanggang Port was expected to open in the fourth quarter, with co-location and “joint inspection, one release”. The opening at 6:30 a.m. on 12 October 2026 is that plan carried out. Do not rewrite the plan sentence as if it were the announcement, and do not treat the two sentences as unrelated items.",
+      angleZh: "旅客少排一次隊，兩邊的查驗仍然發生。合作是流程，不是把任何一方的法律取消。開通時刻和暫停落馬洲旅檢才是 10 月 9 日公報；每日約 20 萬人次是 7 月的設計流量。一則演講只選其中一個事實。",
+      angleEn: "The passenger queues once. Inspection on both sides still happens. Cooperation is a process. It does not cancel either side’s law. The opening time and the Lok Ma Chau suspension are the 9 October announcement. About 200,000 passenger trips a day is the July design flow. One talk uses only one of those facts.",
+      biteZh: "皇崗的一地兩檢讓旅客少走一次。一次放行的意思是查完才放，不是不查。如果我要加事實，我只加 10 月 12 日早上 6 時 30 分已開通，或 24 小時旅客和客運車輛，然後停。不再加年報的人次。",
+      biteEn: "Co-location at Huanggang means the passenger moves once. One release means release after the inspection, not instead of it. If I add a fact, I add only that it opened at 6:30 a.m. on 12 October, or that passengers and passenger vehicles clear around the clock, and then I stop. I do not add the annual report’s passenger total.",
+      href: "speech.html#ex-huanggang",
+      linkZh: "皇崗 1-2-3 示例",
+      linkEn: "Huanggang 1-2-3 example"
     }
   ],
   "全方位打擊非法勞工": [
@@ -288,12 +288,14 @@ var EXCERPT_ANALYSIS = {
   "皇崗口岸「一地兩檢」": {
     zh: {
       after: [
-        "講的是重建後的皇崗口岸怎樣查人，預計今年第四季啟用。旅客在同一地點完成兩邊的檢查，模式叫「合作查驗、一次放行」，所以少走一次、少排一次隊。受影響的是使用皇崗的旅客，以及兩邊的查驗人員。一次放行是查完才放，不是取消其中一方的檢查，也不是把法律併成一套。"
+        "講的是施政報告裡的計劃：重建後的皇崗口岸預計今年第四季啟用。旅客在同一地點完成兩邊的檢查，模式叫「合作查驗、一次放行」，所以少走一次、少排一次隊。受影響的是使用皇崗的旅客，以及兩邊的查驗人員。一次放行是查完才放，不是取消其中一方的檢查，也不是把法律併成一套。這一句維持施政報告的原文，不要改寫成已經開通。",
+        "開通是另一份文件，接的是同一件事。保安局與深圳市人民政府口岸辦公室 2026 年 10 月 9 日的聯合公布寫明：港方口岸區及相關延伸區自 2026 年 7 月 31 日零時起依照香港法律實施管轄；口岸於 2026 年 10 月 12 日上午 6 時 30 分正式開通，為旅客和客運車輛提供 24 小時通關，同時暫停往來深圳皇崗口岸臨時旅檢樓和香港落馬洲管制站的旅檢服務。這份公布沒有寫設計人次。每日約 20 萬人次、北環線支線開通後約 30 萬人次，是 2026 年 7 月 17 日政府公布的設計流量，不是開通當日的實際人次。應考時用時事頁「新皇崗口岸」那一張卡，把計劃和開通說成一層印象。"
       ]
     },
     en: {
       after: [
-        "This is how the rebuilt Huanggang Port will examine people. It is expected to open in the fourth quarter. Passengers complete both sides’ checks in one place, under “joint inspection, one release”, so they move and queue once. It affects passengers using Huanggang and the officers on both sides. One release means release after the inspection. It does not cancel either side’s check, and it does not merge the two legal systems."
+        "This Policy Address sentence is the plan: the rebuilt Huanggang Port was expected to open in the fourth quarter. Passengers complete both sides’ checks in one place, under “joint inspection, one release”, so they move and queue once. It affects passengers using Huanggang and the officers on both sides. One release means release after the inspection. It does not cancel either side’s check, and it does not merge the two legal systems. Keep this as the Policy Address wording. Do not rewrite it as if the port had already opened inside that sentence.",
+        "The opening is a different document about the same project. The joint announcement of 9 October 2026, by the Security Bureau and the Shenzhen Municipal People’s Government Port Office, states that the Hong Kong port area and the related extended areas have been administered under Hong Kong law since 00:00 on 31 July 2026. The port opened at 6:30 a.m. on 12 October 2026, with 24-hour clearance for passengers and passenger vehicles, and passenger clearance between the temporary passenger building at Shenzhen Huanggang Port and Hong Kong’s Lok Ma Chau Control Point was suspended. That announcement does not state a design throughput. About 200,000 passenger trips a day, and about 300,000 after the Northern Link spur line opens, is the design flow in the government announcement of 17 July 2026, not the actual count on opening day. In the exam, use the “new Huanggang Port” card on the current-affairs page, and say the plan and the opening as one impression."
       ]
     }
   },
