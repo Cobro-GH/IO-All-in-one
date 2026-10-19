@@ -251,6 +251,11 @@
     }
   }
 
+  var yachtArticle = document.getElementById("yachts");
+  if (yachtArticle) {
+    renderSpeech(yachtArticle, (window.SPEECH_SOURCES || {})["粵艇南下"]);
+  }
+
   var root = document.getElementById("news-root");
   if (!root) return;
   fetch("data/news.json", { cache: "no-cache" })
