@@ -193,6 +193,21 @@ var SPEECH_SOURCES = {
       linkEn: "Enforcement example"
     }
   ],
+  "粵艇南下": [
+    {
+      layerZh: "印象 2｜預先名單不是准許入境",
+      layerEn: "Impression 2, an advance list is not permission to land",
+      meaningZh: "2026 年 10 月 16 日的首航儀式標誌「粵艇南下」正式實施。牽頭的是運輸及物流局和海事處。五艘是儀式上迎接的廣東籍遊艇，不是入境處的人次。離岸 20 海里和抗浪不少於兩米，是船的申請條件。六個指定口岸是內地離境查驗，不是香港的陸地管制站，也不是皇崗。",
+      meaningEn: "The maiden-voyage ceremony on 16 October 2026 marks the official start of southbound travel for Guangdong yachts. Transport and Logistics and the Marine Department lead it. The five yachts were welcomed at the ceremony. They are not an ImmD passenger count. An offshore range of 20 nautical miles and wave resistance of not less than 2 metres are conditions for the vessel to apply. The six designated ports are Mainland departure inspection, not a Hong Kong land control point, and not Huanggang.",
+      angleZh: "入境處守的是船上的人。抵港前最遲 24 小時經海事處電子業務系統提交的船員及乘客名單，是預先申報，供預先審核，不是自動准許入境。人要按確認電郵到指定認可碇泊處，或在入港後及離港前 24 小時內由船長或代表帶同全員旅行證件到港口管制組。身份、逗留條件和例外仍由人員判斷。近 300 人的本地知識資格、約 3,500 億港元的遊艇市場和超過 1,100 個泊位，都不是入境處的成績。指引裡的 30 小時是衞生署自由無疫通行證，不是這份名單的時限。",
+      angleEn: "ImmD’s gate is the people on board. The crew and passenger list submitted through the Marine Department’s Electronic Business System no later than 24 hours before arrival is an advance declaration for pre-checking. It is not automatic permission to land. People clear immigration at the approved anchorage named in the acknowledgement email, or the master or a representative brings everyone’s travel documents to the Harbour Control Section within 24 hours after arrival and within 24 hours before departure. Identity, conditions of stay and exceptions stay with an officer. Nearly 300 local-knowledge qualifications, a yacht-market figure of about HK$350 billion, and more than 1,100 berths are not ImmD results. In the procedure guide, 30 hours is the Department of Health’s free pratique, not the deadline for this list.",
+      biteZh: "遊艇可以南下，但人仍要過入境檢查。我只加一個入境處事實：抵港前最遲 24 小時經 eBS 交船員和乘客名單。名單不是放行。如果我在港口管制組當值，船的錨位歸海事處，人的證件歸我。",
+      biteEn: "Yachts may travel southbound, but people still clear immigration. I add only one ImmD fact: the crew and passenger list goes in through eBS no later than 24 hours before arrival. The list is not a release. If I were on duty at the Harbour Control Section, the anchorage would be the Marine Department’s, and the documents would be mine.",
+      href: "speech.html#ex-yachts",
+      linkZh: "粵艇南下 1-2-3 示例",
+      linkEn: "Southbound-yacht 1-2-3 example"
+    }
+  ],
   "刊物目錄（年報、新聞公報）": [
     {
       layerZh: "印象 1｜你怎樣跟進部門",
