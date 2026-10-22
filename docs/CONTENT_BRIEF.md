@@ -132,21 +132,24 @@
 
 ## E. 即席演講（可引用 `Impromptu_talk.md`）
 
-### E1. 頁面功能
-- 3 分鐘計時器；價值詞抽籤；錄音／字數可選  
-- 顯示：建議 45–60 秒／故事；結構 = 2 個人故事 + 1 社會例子
+### E1. 頁面功能（考場時鐘已改；Drive 3 分鐘只作舊練習）
+- 考場：抽一個抽象英文詞，零準備，約 2 分 30 秒。五段：鉤子 0:00–0:25 → 社會 0:25–1:15 → ImmD 1:15–1:55 → 個人 1:55–2:20 → 收句 2:20–2:30
+- 1-2-3 印象只作由淺到深的鏡頭，疊在該時鐘上，不是考場計時
+- Drive 舊練習：約 12 秒準備然後 3:00，頁面上要標明不是考場
+- 每日 3 次抽詞即講；聽填充詞；收句落在 2:15–2:30
 
 ### E2. 三故事模板（填空卡）
 - **A 小組 Project** → Teamwork／Leadership／Conflict／Communication／Time／Stress／Responsibility  
 - **B 兼職侍應** → Integrity／Patience／Adaptability／Rules／Service／EQ  
 - **C COVID／科技** → Technology／Change／Health／Security／Cooperation／Resilience  
 
-### E3. 必上示範：Adaptability 完整 3 分鐘
-- 0:00–0:40 引言（適者生存）  
-- 0:40–1:30 Story B  
-- 1:30–2:20 Story C（e-Channel）  
-- 2:20–3:00 扣 IO 管制站＋承諾  
-→ 中英骨架全文見 `Impromptu_talk.md` §6
+### E3. 必上示範：Adaptability 壓進 2:30
+- 0:00–0:25 鉤子（改方法，不改責任）
+- 0:25–1:15 社會
+- 1:15–1:55 入境處（無接觸 e-道或年報人流，二選一）
+- 1:55–2:20 個人（故事 B 一句）
+- 2:20–2:30 收句
+Drive 原文的 3 分鐘四段見 `Impromptu_talk.md` §6，頁面須標為舊練習。
 
 ### E4. Action Plan 模組
 1. 預製 3 骨架並錄音  

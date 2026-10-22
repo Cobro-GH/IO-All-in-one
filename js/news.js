@@ -168,6 +168,8 @@
       var list = el("div", "news-list");
       (section.items || []).forEach(function (item) {
         var article = el("article", "news-item");
+        var pressId = (item.url || "").match(/press-releases\/([0-9a-z]+)\.html/i);
+        if (pressId) article.id = "press-" + pressId[1];
         var copy = dict[item.title] || null;
         var h3 = el("h3");
         if (copy && copy.title) {

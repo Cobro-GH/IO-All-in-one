@@ -87,15 +87,16 @@
       "Teamwork", "Leadership", "Conflict", "Communication", "Time Management",
       "Stress", "Responsibility", "Integrity", "Patience", "Adaptability",
       "Rules", "Service", "EQ", "Technology", "Change", "Health", "Security",
-      "Cooperation", "Resilience", "Discipline", "Efficiency", "Fairness",
-      "Empathy", "Accountability", "Courage", "Trust", "Innovation",
+      "Cooperation", "Resilience", "Connectivity", "Gatekeeper", "Innovation",
+      "Discipline", "Efficiency", "Fairness",
+      "Empathy", "Accountability", "Courage", "Trust",
       "Orange", "Bridge", "Passport", "Queue", "Balance", "Boundary", "Smart"
     ],
     speech_stories: [
       "用故事 A（小組 Project）講 Teamwork／Leadership／Stress",
       "用故事 B（侍應）講 Integrity／EQ／Adaptability",
       "用故事 C（疫情／e-Channel）講 Technology／Resilience／Rules",
-      "主題 Adaptability：完整 3 分鐘結構（Intro→B→C→Close）"
+      "考場：抽一個詞，零準備，2:30 五段（鉤子→社會→ImmD→個人→收句）。3 分鐘是舊練習。"
     ],
     written_topics: [
       "【練習｜角度1+6】智慧口岸／e-道擴展如何同時提升便利與保安？",
