@@ -258,6 +258,11 @@ tr:nth-child(even) td { background: rgba(255,255,255,.02); }
   margin-right: .25em;
 }
 
+.skim { margin: .35rem 0 .6rem; }
+.skim li { margin: .18em 0; line-height: 1.45; }
+.skim a { margin-right: .35rem; }
+.old-drill { opacity: .92; }
+
 .toc {
   background: var(--bg-elev); border: 1px solid var(--border);
   border-radius: var(--radius); padding: 1rem 1.25rem; margin: 1rem 0;

@@ -17,7 +17,8 @@
       label: bi("初步面試", "Initial interview"),
       items: [
         ["group-discussion.html", bi("小組討論", "Group discussion")],
-        ["speech.html", bi("即席演講", "Impromptu speech")]
+        ["group-discussion.html#prelim-sheet", bi("考前一屏", "Prelim sheet")],
+        ["speech.html", bi("即席演講 2:30", "Impromptu 2:30")]
       ]
     },
     { label: bi("最後面試", "Final interview"), href: "interview.html" },
