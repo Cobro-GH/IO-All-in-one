@@ -85,8 +85,8 @@ var SPEECH_SOURCES = {
       meaningEn: "The pilot starts in December at the Bridge Hong Kong Port. AI with facial recognition identifies registered eligible drivers and passengers of cross-boundary private cars, for clearance without leaving the vehicle.",
       angleZh: "「無感」是少一次停車，不是少一次身份核對。未登記、證件有問題、或系統對不上的人，仍然要停下來。",
       angleEn: "“Contactless” means one less stop. It does not mean one less identity check. A person who is not registered, whose document is doubtful, or whom the system does not match, still stops.",
-      biteZh: "智通行是給已登記、合資格的司機和乘客，人不用下車。我不會把它說成所有車輛都自動放行。科技改的是步驟，判斷還在。",
-      biteEn: "Smart Crossing is for registered, eligible drivers and passengers, who need not leave the car. I would not describe it as every vehicle being released automatically. Technology changes the step. Judgement stays.",
+      biteZh: "智通行是給已登記、合資格的司機和乘客，人不用下車。我不會把它說成所有車輛都自動放行。科技改的是步驟，判斷還在。約 20 秒和無感e-道的登記人次是 11 月 11 日立法會十一題，見 speech.html#ex-lcq11-clearance，不要說成這一句施政報告。",
+      biteEn: "Smart Crossing is for registered, eligible drivers and passengers, who need not leave the car. I would not describe it as every vehicle being released automatically. Technology changes the step. Judgement stays. About 20 seconds, and the Seamless e-Channel enrolment count, are Legislative Council Question 11 of 11 November. See speech.html#ex-lcq11-clearance. Do not attribute them to this Policy Address sentence.",
       href: "speech.html#ex-flow",
       linkZh: "和年報人流怎樣二選一",
       linkEn: "How to choose this or the annual-report flow"
@@ -291,12 +291,14 @@ var EXCERPT_ANALYSIS = {
   "港珠澳大橋「智通行」先導計劃": {
     zh: {
       after: [
-        "今年 12 月，大橋香港口岸試行車上無感通關。人工智能配合人面辨識，認出已登記、合資格的跨境私家車司機和乘客。步行旅客和未登記的車不在這項試驗裡。「無感」是少一次停車和出示證件。身份仍然要被識別。未登記、系統對不上，或證件有疑問的人，要停下來受檢。"
+        "今年 12 月，大橋香港口岸試行車上無感通關。人工智能配合人面辨識，認出已登記、合資格的跨境私家車司機和乘客。步行旅客和未登記的車不在這項試驗裡。「無感」是少一次停車和出示證件。身份仍然要被識別。未登記、系統對不上，或證件有疑問的人，要停下來受檢。",
+        "約 20 秒、年滿 11 歲，以及「無感e-道」截至 11 月 8 日逾 79 000 人登記、使用超過 200 000 人次，是 2026 年 11 月 11 日立法會十一題，不是這一句施政報告。約 20 秒是尚未推出的先導預計，不是已經全線實施。北環線的二○三四年和約 11 分鐘也不在這一則。"
       ]
     },
     en: {
       after: [
-        "From December, the Hong Kong Port of the Hong Kong-Zhuhai-Macao Bridge pilots clearance without leaving the car. AI and facial recognition identify drivers and passengers of cross-boundary private cars who have already registered and are eligible. Walk-up passengers and cars that are not registered are outside this pilot. “Contactless” means one less stop and one less document produced. Identity is still identified. Someone who is not registered, whom the system does not match, or whose document is doubtful, stops for examination."
+        "From December, the Hong Kong Port of the Hong Kong-Zhuhai-Macao Bridge pilots clearance without leaving the car. AI and facial recognition identify drivers and passengers of cross-boundary private cars who have already registered and are eligible. Walk-up passengers and cars that are not registered are outside this pilot. “Contactless” means one less stop and one less document produced. Identity is still identified. Someone who is not registered, whom the system does not match, or whose document is doubtful, stops for examination.",
+        "About 20 seconds, the age of 11, and the Seamless e-Channel count of over 79 000 persons enrolled and patronage exceeding 200 000 up to 8 November, are Legislative Council Question 11 of 11 November 2026. They are not this Policy Address sentence. About 20 seconds is an estimate for a pilot that has not yet been launched. It is not implementation across the network. The Northern Link year 2034 and the about 11 minutes are not in this item either."
       ]
     }
   },
